@@ -192,7 +192,7 @@
                 })
                 imageContainer.innerHTML += imageContainer.innerHTML;
                 imageContainer.innerHTML += imageContainer.innerHTML;
-                name.innerText = `${data["name"].startsWith("Nhà Văn Hóa") ? "" : "Gia đình: "}${data["name"]}`;
+                name.innerText = `${data["name"].startsWith("Nhà Văn Hóa") || data["name"].startsWith("Ủy Ban") ? "" : "Gia đình: Hội Viên "}${data["name"]}`;
                 content.innerText = data["content"];
                 address.innerText = data["address"];
                 document.getElementById('map').href = data["map"];
